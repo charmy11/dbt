@@ -1,0 +1,1 @@
+select sum(c_acctbal)  total from {{ ref('playing_with_data') }}  having sum(c_acctbal) > 100000000 or sum(c_acctbal) = 100000000
